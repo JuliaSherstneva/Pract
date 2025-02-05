@@ -25,6 +25,7 @@ class Program
             Console.WriteLine($"Введите внутренний радиус R2 для кольца {i + 1}:");
             radii[i, 1] = Convert.ToDouble(Console.ReadLine());
         }
+
         for (int i = 0; i < 3; i++) // Вычисление и вывод площадей колец
         {
             if (radii[i, 0] > radii[i, 1]) // Проверка условия R1 > R2
