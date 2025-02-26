@@ -6,6 +6,7 @@
 
 class Program
 {
+
     // Функция для вычисления периметра и площади равностороннего треугольника
     static void TrianglePS(double a, out double P, out double S)
     {
