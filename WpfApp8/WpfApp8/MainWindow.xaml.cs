@@ -65,7 +65,6 @@ namespace WpfApp8
         {
           
         }
-
         private void btnResult2_Click(object sender, RoutedEventArgs e)
         {
             // 1 тонна = 1000 кг
