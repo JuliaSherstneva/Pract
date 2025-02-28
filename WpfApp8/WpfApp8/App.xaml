@@ -1,0 +1,29 @@
+﻿<Application x:Class="WpfApp8.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfApp8"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style TargetType="GroupBox">
+            <Style.Setters>
+                <Setter Property="BorderBrush"
+                        Value="Aqua"/>
+            </Style.Setters>
+        </Style>
+
+        <Style TargetType="Button">
+            <Style.Setters>
+                <Setter Property="Background"
+                        Value="Aquamarine"/>
+            </Style.Setters>
+
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Style.Setters>
+                <Setter Property="Margin"
+                        Value="5"/>
+            </Style.Setters>
+        </Style>
+    </Application.Resources>
+</Application>
