@@ -63,6 +63,8 @@ namespace WpfApp8
 
         private void txtBoxM_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
         {
+            txtBoxT.Clear();
+            txtBoxKg.Clear();
         }
         private void btnResult2_Click(object sender, RoutedEventArgs e)
         {
