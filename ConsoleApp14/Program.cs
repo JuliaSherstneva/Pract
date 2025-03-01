@@ -17,7 +17,6 @@ class Program
     static void Main(string[] args)
     {
         double[,] radii = new double[3, 2];
-
         for (int i = 0; i < 3; i++) // Ввод радиусов для трех колец
         {
             Console.WriteLine($"Введите внешний радиус R1 для кольца {i + 1}:");
