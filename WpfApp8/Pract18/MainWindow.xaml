@@ -1,0 +1,188 @@
+﻿<Window x:Class="Pract18.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pract18"
+        mc:Ignorable="d"
+   
+        Title="Практическая 18"
+
+        
+        Height="300"
+        Width="280"
+        
+        Icon="/icons8_cat_eyes_500px_1.png"
+        
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <CheckBox x:Name="cbAuto"
+                  Content="Вкл/Выкл"
+                  IsChecked="True"
+                  Grid.Column="0"
+                  Grid.Row="0"
+                  
+                  Click="cbAuto_Click"/>
+        <GroupBox x:Name="gbAuto"
+                  Header="Авто Режим"
+                  Grid.Column="0"
+                  Grid.Row="1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="1.5*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <RadioButton x:Name="rbAuto1"
+                             Content="Понедельник"
+                             Grid.Column="0"
+                             Grid.Row="0"
+                             Grid.ColumnSpan="2"
+                             Checked="rbAuto1_Checked"/>
+                <RadioButton x:Name="rbAuto2"
+                             Content="Вторник"
+                             Grid.Column="0"
+                             Grid.Row="1"
+                             Grid.ColumnSpan="2"
+                             Checked="rbAuto2_Checked"/>
+                <RadioButton x:Name="rbAuto3"
+                             Content="Среда"
+                             Grid.Column="0"
+                             Grid.Row="2"
+                             Grid.ColumnSpan="2"
+                             Checked="rbAuto3_Checked"/>
+                <RadioButton x:Name="rbAuto4"
+                             Content="Четверг"
+                             Grid.Column="0"
+                             Grid.Row="3"
+                             Grid.ColumnSpan="2"
+                             Checked="rbAuto4_Checked"/>
+                <RadioButton x:Name="rbAuto5"
+                             Content="Пятница"
+                             Grid.Column="0"
+                             Grid.Row="4"
+                             Grid.ColumnSpan="2"
+                             Checked="rbAuto5_Checked"/>
+                <RadioButton x:Name="rbAuto6"
+                             Content="Суббота"
+                             Grid.Column="0"
+                             Grid.Row="5"
+                             Grid.ColumnSpan="2"
+                             Checked="rbAuto6_Checked"/>
+                <RadioButton x:Name="rbAuto7"
+                             Content="Воскресенье"
+                             Grid.Column="0"
+                             Grid.Row="6"
+                             Grid.ColumnSpan="2"
+                             Checked="rbAuto7_Checked"/>
+
+                <Label Content="Ответ:"
+                       Grid.Column="0"
+                       Grid.Row="7"/>
+
+                <TextBox x:Name="txtBoxResultAuto"
+                       Grid.Column="1"
+                       Grid.Row="7"
+                       IsReadOnly="True"/>
+            </Grid>
+        </GroupBox>
+
+        <CheckBox x:Name="cbManual"
+                  Content="Вкл/Выкл"
+                  IsChecked="False"
+                  Grid.Column="1"
+                  Grid.Row="0"
+                  
+                  Click="cbManual_Click"/>
+
+        <GroupBox
+            x:Name="gbManual"
+                  Header="Ручной режим"
+                  Grid.Column="1"
+                  Grid.Row="1"
+                  IsEnabled="False">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="1.5*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <RadioButton x:Name="rbManual1"
+                            Content="Понедельник"
+                            Grid.Column="0"
+                            Grid.Row="0"
+                            Grid.ColumnSpan="2"/>
+                <RadioButton x:Name="rbManual2"
+                            Content="Вторник"
+                            Grid.Column="0"
+                            Grid.Row="1"
+                            Grid.ColumnSpan="2"/>
+                <RadioButton x:Name="rbManual3"
+                            Content="Среда"
+                            Grid.Column="0"
+                            Grid.Row="2"
+                            Grid.ColumnSpan="2"/>
+                <RadioButton x:Name="rbManual4"
+                            Content="Четверг"
+                            Grid.Column="0"
+                            Grid.Row="3"
+                            Grid.ColumnSpan="2"/>
+                <RadioButton x:Name="rbManual5"
+                            Content="Пятница"
+                            Grid.Column="0"
+                            Grid.Row="4"
+                            Grid.ColumnSpan="2"/>
+                <RadioButton x:Name="rbManual6"
+                            Content="Суббота"
+                            Grid.Column="0"
+                            Grid.Row="5"
+                            Grid.ColumnSpan="2"/>
+                <RadioButton x:Name="rbManual7"
+                            Content="Воскресенье"
+                            Grid.Column="0"
+                            Grid.Row="6"
+                            Grid.ColumnSpan="2"/>
+                <Button x:Name="btnResult"
+                    Content="Ответ:"
+                    Grid.Column="0"
+                    Grid.Row="7"
+                    Click="btnResult_Click"/>
+
+                <TextBox x:Name="txtBoxResultManual"
+                     Grid.Column="1"
+                     Grid.Row="7"
+                     IsReadOnly="True"/>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
