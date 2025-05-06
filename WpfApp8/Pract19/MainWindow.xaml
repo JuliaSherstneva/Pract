@@ -1,0 +1,132 @@
+﻿<Window x:Class="Pract19.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pract19"
+        mc:Ignorable="d"
+       
+        Title="Практическая 19"
+
+        Height="370"
+        Width="320"
+        
+        Icon="/icons8_cat_512px.png"
+        
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <GroupBox Header="Список значений"
+                  BorderBrush="Purple"
+                  Margin="5"
+                  Grid.Column="0"
+                  Grid.Row="0">
+            <ListBox x:Name="lBoxValues"/>
+        </GroupBox>
+
+        <GroupBox Header="Управленнием списком"
+                  BorderBrush="Purple"
+                  Margin="5"
+                  Grid.Column="1"
+                  Grid.Row="0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Label Content="Значение"
+                       Grid.Row="0"/>
+
+                <TextBox x:Name="txtBoxValue"
+                         Margin="5"
+                         Grid.Row="1"/>
+                <Button x:Name="btnAddValue"
+                        Content="Добавить"
+                        Margin="5"
+                        Grid.Row="2"
+                        Click="btnAddValue_Click"/>
+
+                <Button x:Name="btnDeleteValue"
+                        Content="Удалить"
+                        Margin="5"
+                        Grid.Row="3"
+                        Click="btnDeleteValue_Click"/>
+
+                <Button x:Name="btnClearValue"
+                        Content="Очистить"
+                        Margin="5"
+                        Grid.Row="4"
+                        Click="btnClearValue_Click"/>
+            </Grid>                
+        </GroupBox>
+
+        <GroupBox Header="Решение задачи"
+                  BorderBrush="Purple"
+                  Margin="5"
+                  Grid.Column="0"
+                  Grid.Row="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Button x:Name="btnResult"
+                        Content="Рассчитать"
+                        Margin="5"
+                        Grid.Row="0"
+                        Click="btnResult_Click"/>
+
+                <Label Content="Результат"
+                       Grid.Row="1"/>
+
+                <TextBox x:Name="txtBoxResult"
+                         Margin="5"
+                         IsReadOnly="True"
+                         Grid.Row="2"/>
+            </Grid>                 
+        </GroupBox>
+
+        <GroupBox Header="Заполнение списка"
+                  BorderBrush="Purple"
+                  Margin="5"
+                  Grid.Column="1"
+                  Grid.Row="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Label Content="Кол-во значений"
+                       Grid.Row="0"/>
+
+                <TextBox x:Name="txtBoxValues"
+                         Margin="5"
+                         Grid.Row="1"/>
+
+                <Button x:Name="btnGenerateValues"
+                        Content="Заполнить"
+                        Margin="5"
+                        Grid.Row="2"
+                        Click="btnGenerateValues_Click"/>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>

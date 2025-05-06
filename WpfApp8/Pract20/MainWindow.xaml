@@ -1,0 +1,120 @@
+﻿<Window x:Class="Pract20.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pract20"
+        mc:Ignorable="d"
+       
+        Title="Практическая 20"
+
+        Height="480"
+        Width="270"
+        
+        Icon="/icons8_cat_480px.png" 
+        
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize">
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <GroupBox Header="Диапазон от -5 до 5"
+                  BorderBrush="Orange"
+                  Margin="5,25,5,5"
+                  Grid.Column="0"
+                  Grid.Row="0">
+
+        </GroupBox>
+        <Grid Margin="0,25,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBox x:Name="txtBoxVal"
+                     Margin="30,26,30,10"
+                     Grid.Row="0"
+                     ToolTip="Сколько ты хочешь цифр? Пиши тут"/>
+
+            <Button x:Name="btnGenerationValue"
+                    Content="Генерировать"
+                    Margin="30,14,30,14"
+                    Grid.Row="1"
+                    Click="btnGenerationValue_Click"
+                    ToolTip="Генерация рандомных чисел(Чел просто нажми на кнопку.. ( ^-^)>" >
+            </Button>
+
+            <Label Content="Cгенерированные значения:"
+                   Grid.Row="2" 
+                   Margin="30,0,30,37"/>
+            <TextBox x:Name="txtBoxValue"
+                   Margin="30,23,30,10"
+                   Grid.Row="2"
+                   ToolTip="Ну вроде числа, верно? Так зачем тебе на них смотреть..( .-.)>" />
+
+            <Button x:Name="btnResult"
+                    Content="Рассчитать"
+                    Margin="30,15,30,15"
+                    Grid.Row="3"
+                    Click="btnResult_Click"
+                    ToolTip="Вычислять для чисел больше 0 Корень(X), а для чисел меньше 0 функцию x в квадрате"  />
+            <Label  Content="Результат больше 0:"
+                    Grid.Row="4" 
+                    Margin="30,2,71,32"/>
+            <TextBox x:Name="txtBoxResult1"
+                    Margin="30,25,30,10"
+                    IsReadOnly="True"
+                    Grid.Row="4"
+                    ToolTip="Вот это ты Энштейн О.О"/>
+            <Label  Content="Результат меньше 0:"
+                    Grid.Row="5" 
+                    Margin="30,2,71,32"/>
+            <TextBox x:Name="txtBoxResult2"
+                    Margin="30,25,30,10"
+                    IsReadOnly="False"
+                    Grid.Row="5"
+                    ToolTip="Да, да ты всё ещё гений, постой на руках и сделай сальто"/>
+
+            <Button x:Name="btnClearValue"
+                    Content="Очистить"
+                    Margin="30,15,30,15"
+                    Grid.Row="6"
+                    Click="btnClearValue_Click"
+                    ToolTip="Давай сотрём эти бесполезные числа и сделаем следующие =) "       />
+
+            <Menu Grid.Column="0"
+                  Grid.Row="0" 
+                  Margin="0,-23,0,66">
+
+                <MenuItem Header="Файл">
+                    <MenuItem x:Name="mItExit"
+                        Click="mItExit_Click"
+                        Header="Выход"/>
+                </MenuItem>
+
+                <MenuItem Header="Справка">
+                    <MenuItem x:Name="mItInfo"
+                              Click="mItInfo_Click"
+                              Header="О программе"/>
+
+                    <Separator/>
+
+                    <MenuItem x:Name="mItDeveloper"
+                              Click="mItDeveloper_Click"
+                              Header="Разработчик"/>
+                    
+                </MenuItem>
+            </Menu>
+
+        </Grid>
+    </Grid>
+</Window>
