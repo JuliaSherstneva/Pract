@@ -38,7 +38,6 @@ public partial class MainWindow : Window
                             MessageBoxButton.OK,
                             MessageBoxImage.Information);
     }
-
     private void mItDeveloper_Click(object sender, RoutedEventArgs e)
     {
         MessageBox.Show("Шерстнёва Ю.С.\nгр. ИСП-22",
