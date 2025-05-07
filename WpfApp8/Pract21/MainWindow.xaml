@@ -82,7 +82,7 @@
 
                              <TextBox x:Name="txtBoxCount"
                                       Grid.Row="0"/>
-                             <Label Content="- Количество строк"
+                             <Label Content="- Количество столбцов"
                                     Grid.Row="0"
                                     Grid.Column="1"/>
 

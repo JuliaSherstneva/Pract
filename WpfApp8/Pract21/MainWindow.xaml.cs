@@ -95,7 +95,6 @@ public partial class MainWindow : Window
             }
         }
     }
-
     private void btnClear_Click(object sender, RoutedEventArgs e)
     {
         mas = null;
