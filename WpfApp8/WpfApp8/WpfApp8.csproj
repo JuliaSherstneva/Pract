@@ -13,7 +13,6 @@
     <None Remove="logo.png" />
   </ItemGroup>
 
-
 	<ItemGroup>
     <Content Include="icon.ico" />
   </ItemGroup>
