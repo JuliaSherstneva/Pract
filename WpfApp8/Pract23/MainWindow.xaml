@@ -1,0 +1,62 @@
+﻿<Window x:Class="Pract23.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pract23"
+        mc:Ignorable="d"
+       
+        Title="Практическая 23" 
+        
+        Height="520" 
+        Width="500"
+   
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Row="0">
+
+            <MenuItem Header="Файл">
+
+                <MenuItem x:Name="mItExit"
+                          Click="mItExit_Click"
+                          Header="Выход"/>
+                
+                <MenuItem x:Name="mltClear"
+                          Click="mltClear_Click"
+                          Header="Стереть"/>
+                
+                <MenuItem x:Name="mltPaint"
+                          Click="mltPaint_Click"
+                          Header="Рисовать"/>
+                
+                <MenuItem x:Name="mltColor"
+                          Click="mltColor_Click"
+                          Header="Сменить цвет"/>
+            </MenuItem>
+
+            <MenuItem Header="Справка">
+
+                <MenuItem x:Name="mItInfo"
+                          Click="mItInfo_Click"
+                          Header="О программе"/>
+
+                <Separator/>
+
+                <MenuItem x:Name="mItDeveloper"
+                          Click="mItDeveloper_Click"
+                          Header="Разработчик"/>
+
+            </MenuItem>
+        </Menu>
+
+        <Canvas x:Name="canvas"
+                Grid.Row="1"/>
+    </Grid>
+</Window>
