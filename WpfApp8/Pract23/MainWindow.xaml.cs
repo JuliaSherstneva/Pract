@@ -153,7 +153,7 @@ public partial class MainWindow : Window
         T.Points.Add(new Point(280, 35));
         T.Points.Add(new Point(280, 20));
 
-        // Spina
+        // Спина
 
         Spina.Points.Add(new Point(150, 150));
         Spina.Points.Add(new Point(180, 160));
