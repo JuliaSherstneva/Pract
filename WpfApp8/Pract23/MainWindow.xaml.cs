@@ -153,7 +153,71 @@ public partial class MainWindow : Window
         T.Points.Add(new Point(280, 35));
         T.Points.Add(new Point(280, 20));
 
-        // 
+        // Spina
+
+        Spina.Points.Add(new Point(150, 150));
+        Spina.Points.Add(new Point(180, 160));
+        Spina.Points.Add(new Point(200, 170));
+        Spina.Points.Add(new Point(210, 190));
+        Spina.Points.Add(new Point(240, 190));
+        Spina.Points.Add(new Point(290, 210));
+        Spina.Points.Add(new Point(230, 230));
+        Spina.Points.Add(new Point(200, 220));
+        Spina.Points.Add(new Point(190, 230));
+        Spina.Points.Add(new Point(190, 260));
+        Spina.Points.Add(new Point(210, 290));
+        Spina.Points.Add(new Point(280, 310));
+        Spina.Points.Add(new Point(380, 320));
+        Spina.Points.Add(new Point(410, 350));
+        Spina.Points.Add(new Point(430, 380));
+        Spina.Points.Add(new Point(430, 470));
+        Spina.Points.Add(new Point(410, 490));
+        Spina.Points.Add(new Point(380, 500));
+        Spina.Points.Add(new Point(310, 490));
+        Spina.Points.Add(new Point(200, 450));
+        Spina.Points.Add(new Point(180, 460));
+        Spina.Points.Add(new Point(120, 460));
+        Spina.Points.Add(new Point(80, 410));
+        Spina.Points.Add(new Point(90, 400));
+        Spina.Points.Add(new Point(150, 400));
+        Spina.Points.Add(new Point(130, 380));
+        Spina.Points.Add(new Point(120, 340));
+        Spina.Points.Add(new Point(130, 300));
+        Spina.Points.Add(new Point(150, 250));
+        Spina.Points.Add(new Point(170, 230));
+        Spina.Points.Add(new Point(180, 210));
+        Spina.Points.Add(new Point(160, 180));
+
+        // Живот
+
+        Givot1.Points.Add(new Point(120, 345));
+        Givot1.Points.Add(new Point(130, 380));
+        Givot1.Points.Add(new Point(150, 400));
+        Givot1.Points.Add(new Point(130, 400));
+        Givot1.Points.Add(new Point(120, 380));
+
+        Givot2.Points.Add(new Point(180, 460));
+        Givot2.Points.Add(new Point(200, 450));
+        Givot2.Points.Add(new Point(240, 465));
+        Givot2.Points.Add(new Point(270, 475));
+        Givot2.Points.Add(new Point(310, 490));
+        Givot2.Points.Add(new Point(380, 500));
+        Givot2.Points.Add(new Point(350, 510));
+        Givot2.Points.Add(new Point(290, 510));
+
+        // Глаз
+
+        Eye.Points.Add(new Point(270, 425));
+        Eye.Points.Add(new Point(270, 445));
+        Eye.Points.Add(new Point(290, 450));
+        Eye.Points.Add(new Point(290, 420));
+
+        // Зрачок
+
+        Zrachok.Points.Add(new Point(280, 430));
+        Zrachok.Points.Add(new Point(280, 440));
+        Zrachok.Points.Add(new Point(290, 440));
+        Zrachok.Points.Add(new Point(290, 430));
 
         if (canvas.Children.Count == 0)
         {
